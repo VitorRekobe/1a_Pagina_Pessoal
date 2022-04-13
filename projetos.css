@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;1,100;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  caret-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 16px;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 16px;
+}
+
+*::-webkit-scrollbar-track-piece {
+  background-color: rgba(128, 128, 128, 0.377);
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  background-image: url(imagensP/Fundo\ Pagina\ Pessoal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body background{
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100px;
+  z-index: 2;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: #0d2575;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+header a:hover {
+  color: #ff00bf;
+  transition: all .6s;
+}
+
+header .name {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  max-width: 3000px;
+
+  margin: auto;
+}
+
+header img {
+  width: 100px;
+  padding: 15px 0;
+  filter: brightness(180%);
+}
+
+header .container {
+  font-size: 2.7rem;
+  font-weight: bolder;
+  color: #0d2575;
+  display: flex;
+  align-items: center;
+}
+
+header ul li a {
+  margin: 2.4rem;
+  font-size: 2.4rem;
+}
+
+header .li2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+header .li2 ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .head1 {
+  color: #0d2575;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+.fundohamb li {
+  list-style: none;
+  padding: 16px 0;
+  font-size: 5rem;
+  padding-bottom: 6%;
+  padding-top: 6%;
+}
+
+.fundohamb li a{
+  color: white;
+}
+
+.fundohamb {
+  margin-top: 30vh;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.MNBG {
+  text-align: center;
+  display: none;
+  background-image: url(imagensP/Fundo\ Pagina\ Pessoal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.MNBG hr{
+  background: linear-gradient(to right,transparent, #ff00f5, #0d2575, transparent);
+  height: 5px;
+  border: 0;
+  filter: brightness(180%);  
+}
+
+.vazio{
+  height: 20vh;
+}
+
+.Projetos {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.Projetos h1 {
+  font-size: 8rem;
+  color: white;
+  margin-top: 2%;
+}
+
+.Projetos hr {
+  flex: 0 0 100%;
+  margin-top: 2%;
+  background: linear-gradient(to right,
+      transparent,
+      #ff00f5,
+      #0d2575,
+      transparent);
+  height: 2px;
+  border: 0;
+  filter: brightness(180%);
+}
+
+.ImagensPro {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  width: 92%;
+  height: auto;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.ImagensPro img {
+  width: 43vw;
+  display: flex;
+  border-radius: 5%;
+  height: 350px;
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 0.8s;
+}
+
+
+footer {
+  background-color: transparent;
+  width: 100%;
+  background-size: cover;
+  left: 0;
+  bottom: 0;
+  max-height: 10vh;
+}
+
+.centro {
+  margin: 0 auto 0;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.centro hr {
+  flex: 0 0 100%;
+  background: linear-gradient(to right,
+      transparent,
+      #ff00f5,
+      #0d2575,
+      transparent);
+  height: 2px;
+  border: 0;
+  filter: brightness(180%);
+}
+
+.centro p {
+  color: white;
+  margin-bottom: 3%;
+  font-size: 2rem;
+}
+
+@media (min-width:1600px){
+  .ImagensPro img{
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 1117px)  {
+  .ImagensPro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImagensPro {
+    gap: 5em;
+  }
+}
+
+@media (max-width: 1117px) {
+  .li2 .head1 {
+    display: none;
+    width: 0%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .name .container h1 {
+    font-size: 4.2rem;
+  }
+
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu {
+    background: transparent;
+    border-radius: 50%;
+    width: 60px;
+    height: 80px;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburguer {
+    position: relative;
+    display: flex;
+    background: #0d2575;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .hamburguer:before,
+  .hamburguer:after {
+    background: #0d2575;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+  }
+
+  .hamburguer:before {
+    top: -10px;
+  }
+
+  .hamburguer:after {
+    bottom: -10px;
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked~label .hamburguer {
+    transform: rotate(45deg);
+  }
+
+  input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  .ImagensPro img {
+    width: 60vw;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 777px) {
+  .name h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .name .container h1 {
+    font-size: 2.8rem;
+  }
+
+  .name .container img {
+    width: 80px;
+  }
+
+  .menu {
+    height: 60px;
+  }
+
+  .Projetos h1 {
+    font-size: 5rem;
+  }
+
+  .ImagensPro img {
+    width: 90vw;
+  }
+
+  .centro p{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width:580px){
+  .ImagensPro img {
+    height: 200px;
+  }
+}
+
+@media (max-width:360px) {
+  .name .container img {
+    width: 60px;
+  }
+
+  .name .container h1 {
+    font-size: 2.6rem;
+  }
+
+  .menu{
+    height: 40px;
+  }
+
+  .centro p{
+    font-size: 1.3rem;
+  }
+
+  .ImagensPro img {
+    height: 180px;
+  }
+}
+
